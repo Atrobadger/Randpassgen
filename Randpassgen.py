@@ -12,7 +12,7 @@ arrayLength = len(charArray)
 password = ''
 
 for i in range(0, passwordSize):
-    randNumber = random.randint(0, arrayLength)
+    randNumber = random.randint(0, arrayLength-1)
     randChar = charArray[randNumber]
     password = password + randChar
 print("The generated password is " + password)
